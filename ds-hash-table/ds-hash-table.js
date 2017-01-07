@@ -1,18 +1,23 @@
 var makeHashTable = function() {
   //Do not change the max!
   var max = 4;
-
+  var arr = [];
+  var obj = {};
   return {
     _storage: [],
     retrieve: function(key) {
-      //your code is here
+      for (var i = 0; i<arr.length; i++) {
+        if ()
+      }
     },
 
     insert: function(key, value) {
-      //your code is here
+      obj[key] = value
+      arr.push(obj);
+      this._storage[hashFn(key,mak)] = arr;
+    }
   };
-};
-
+}
 // This is a "hashing function". You don't need to worry about it, just use it to turn any key into a pseudo-random key
 var hashFn = function(str, max) {
   var hash = 0;
